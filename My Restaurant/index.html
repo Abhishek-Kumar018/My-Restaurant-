@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>🍴 My Restaurant 🍕</h1>
+    <p>Delicious food made with love & served with happiness ❤️</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <!-- Menu Section -->
+  <section class="menu-container" id="menu">
+    <!-- Starters -->
+    <h2 class="category-title">🍟 Starters & Snacks</h2>
+    <div class="menu">
+      <div class="item" onclick="addToOrder('Samosa', 40)">
+        <img src="samosa_custom.jpg" alt="Samosa">
+        <div class="item-info">
+          <h3>Samosa</h3>
+          <p>₹40</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Paneer Tikka', 180)">
+        <img src="paneer_tikka.jpg" alt="Paneer Tikka">
+        <div class="item-info">
+          <h3>Paneer Tikka</h3>
+          <p>₹180</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Pizza', 189)">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+          alt="Pizza">
+        <div class="item-info">
+          <h3>Pizza</h3>
+          <p>₹189</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Chicken Burger', 150)">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+          alt="Burger">
+        <div class="item-info">
+          <h3>Chicken Burger</h3>
+          <p>₹150</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Pasta', 80)">
+        <img src="pasta_custom.jpg" alt="Pasta">
+        <div class="item-info">
+          <h3>Pasta</h3>
+          <p>₹80</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <h2 class="category-title">🥘 Main Course</h2>
+    <div class="menu">
+      <div class="item" onclick="addToOrder('Chicken Biryani', 250)">
+        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=800&q=80"
+          alt="Chicken Biryani">
+        <div class="item-info">
+          <h3>Chicken Biryani</h3>
+          <p>₹250</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Mutton Biryani', 350)">
+        <img src="mutton_biryani.jpg" alt="Mutton Biryani">
+        <div class="item-info">
+          <h3>Mutton Biryani</h3>
+          <p>₹350</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Vegetable Biryani', 200)">
+        <img src="veg_biryani.jpg" alt="Vegetable Biryani">
+        <div class="item-info">
+          <h3>Vegetable Biryani</h3>
+          <p>₹200</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Paneer Butter Masala', 220)">
+        <img src="butter_paneer_custom.jpg" alt="Paneer Butter Masala">
+        <div class="item-info">
+          <h3>Paneer Butter Masala</h3>
+          <p>₹220</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Garlic Naan', 60)">
+        <img src="garlic_naan_new.jpg" alt="Garlic Naan">
+        <div class="item-info">
+          <h3>Garlic Naan</h3>
+          <p>₹60</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <h2 class="category-title">🍮 Sweet Treats</h2>
+    <div class="menu">
+      <div class="item" onclick="addToOrder('Cake Piece', 120)">
+        <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80"
+          alt="Cake Piece">
+        <div class="item-info">
+          <h3>Cake Piece</h3>
+          <p>₹120</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Gulab Jamun', 90)">
+        <img src="gulab_jamun_custom.jpg" alt="Gulab Jamun">
+        <div class="item-info">
+          <h3>Gulab Jamun</h3>
+          <p>₹90</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Icecream', 50)">
+        <img src="icecream_new.jpg" alt="Icecream">
+        <div class="item-info">
+          <h3>Icecream</h3>
+          <p>₹50</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <h2 class="category-title">🍹 Beverages</h2>
+    <div class="menu">
+      <div class="item" onclick="addToOrder('Mint Mojito', 110)">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80"
+          alt="Mint Mojito">
+        <div class="item-info">
+          <h3>Mint Mojito</h3>
+          <p>₹110</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+      <div class="item" onclick="addToOrder('Fresh Juice', 70)">
+        <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80"
+          alt="Fresh Juice">
+        <div class="item-info">
+          <h3>Fresh Juice</h3>
+          <p>₹70</p>
+          <button>Add to Order</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Summary -->
+  <section class="order-summary" id="order">
+    <h2>🛒 Your Order</h2>
+    <ul id="orderList"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button class="place-order" onclick="placeOrder()">Place Order</button>
+    <button class="cancel-order" onclick="cancelOrder()">Cancel Order</button>
+  </section>
+
+  <!-- Choice Section -->
+  <section class="choice hidden" id="choiceSection">
+    <h2>🍽 How would you like to enjoy your food?</h2>
+    <button onclick="eatInRestaurant()">Eat in Restaurant</button>
+    <button onclick="showDeliveryForm()">Home Delivery</button>
+  </section>
+
+  <!-- Delivery Option -->
+  <section class="delivery hidden" id="deliveryForm">
+    <h2>🚚 Delivery Details</h2>
+    <form id="deliveryDetails">
+      <input type="text" id="custName" placeholder="Full Name" required><br>
+      <input type="text" id="custPhone" placeholder="Phone Number" required><br>
+      <input type="text" id="custDoor" placeholder="Door Number / Flat" required><br>
+      <textarea id="custAddress" placeholder="Full Address" required></textarea><br>
+      <button type="button" onclick="getLocation()">📍 Use Live Location</button><br>
+      <button type="submit">Confirm Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>📍 Location: Main Street, Food City</p>
+    <p>📞 Contact: +91 9876543210 | ✉️ myrestaurant@gmail.com</p>
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </div>
+    <p>&copy; 2025 My Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
